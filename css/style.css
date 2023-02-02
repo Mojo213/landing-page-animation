@@ -30,6 +30,14 @@ nav{
   height: 80px;
   justify-content: center;
 }
+
+nav :hover > li:hover {
+
+  transform: scale(1.1);
+  z-index: 1;
+
+}
+
 nav ul{
   display: flex;
   flex-direction: row;
@@ -69,21 +77,27 @@ nav ul{
 }
 /* Footer + pokeball*/
 .copyright {
+  display: flex;
+  justify-content: center;
   font-size: 30px;
   font-family: 'Pokemon Solid', sans-serif;
   color: rgb(255, 255, 255);
   position: fixed;
   bottom: 1em;
+  width: 1000px;
   }
-.copyright > img {
+.copyright >  img {
     transform: translateY(0, 0);
     animation: moveball 3s infinite;
+    
   }
   @keyframes moveball {
      0% {transform: translateX(0) ;}
      50% {transform: translateX(50px) ;}
      100% {transform: translateX(0) ;}
   }
+
+  
 
 
 
@@ -92,7 +106,6 @@ nav ul{
    .pikachu-animation-container {
     height: 100px;
     width: 100px;
-    border-style: dashed;
     position: fixed;
     position: fixed;
     bottom: 5em;
@@ -174,6 +187,12 @@ nav ul{
   25%  {transform: translate(30%, 180%);}
   100% {transform: translate(60%, 110%);}
 }
+
+
+
+
+
+
 
 
 
